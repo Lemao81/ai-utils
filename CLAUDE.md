@@ -14,11 +14,14 @@
 - C#:
   - Tests:
     - Use Arrange, Act, Assert pattern (comment each section in method).
-- Typescript:
+- TypeScript:
   - Remove braces around arrow function with single-statements.
   - Add the return type to all functions, except component functions.
-  - For react components props declarations, use typescript type, not interface.
-  - When creating Cypress tests, use the data-cy attribute as targeted selector for elements used in the test.
+  - For react components props declarations, use TypeScript type, not interface.
+  - Always use single quotes, matching the Biome config's `quoteStyle`.
+- Cypress:
+  - Select elements only via `cy.get('[data-cy=...]')`; add a `data-cy` attribute to every element a test targets.
+  - Keep `it()` titles to a few words naming the main thing, not action→result sentences.
 
 ## Workflows
 
