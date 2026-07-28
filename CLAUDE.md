@@ -7,18 +7,18 @@
 
 ## Code Style
 - General:
-  - insert new line before return keyword if not first line of block
-  - put single line statements in curly braces to separate line
-  - never add comments
-  - leave edited files with CRLF line ending
+  - Insert new line before return keyword if not first line of block.
+  - Put single line statements in curly braces to separate line.
+  - Never add comments, except tool-control directive comments when explicitly instructed — e.g. suppression/ignore/pragma comments for linters, formatters, type-checkers, or static analyzers.
+  - Leave edited files with CRLF line ending.
 - C#:
   - Tests:
-    - Arrange, Act, Assert pattern (comment each section in method)
+    - Use Arrange, Act, Assert pattern (comment each section in method).
 - Typescript:
-  - Remove braces around arrow function with single-statements
-  - Add the return type to all functions, except component functions
-  - for react components props declarations, use typescript type, not interface
-  - when creating Cypress tests, use the data-cy attribute as targeted selector for elements used in the test
+  - Remove braces around arrow function with single-statements.
+  - Add the return type to all functions, except component functions.
+  - For react components props declarations, use typescript type, not interface.
+  - When creating Cypress tests, use the data-cy attribute as targeted selector for elements used in the test.
 
 ## Workflows
 
@@ -26,4 +26,4 @@
 
 When creating or modifying API endpoints:
 
-1. Add/update the endpoint in the .http file, use a sample payload for POST/PUT/PATCH methods
+1. Add/update the endpoint in the .http file, use a sample payload for POST/PUT/PATCH methods.
