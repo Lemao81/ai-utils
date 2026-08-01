@@ -19,6 +19,7 @@
   - Add the return type to all functions, except component functions.
   - For react components props declarations, use TypeScript type, not interface.
   - Always use single quotes, matching the Biome config's `quoteStyle`.
+  - Insert an empty line after a multi-line block statement (`if`, `for`, `while`, `do`/`while`, `switch`, `try`/`catch`), unless it is the last statement in its scope. Never insert one before a continuation keyword (`} else {`, `} catch {`, `} finally {`, `} while (…);`).
 - Cypress:
   - Select elements only via `cy.get('[data-cy=...]')`; add a `data-cy` attribute to every element a test targets.
   - Keep `it()` titles to a few words naming the main thing, not action→result sentences.
