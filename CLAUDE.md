@@ -15,7 +15,7 @@
   - Tests:
     - Use Arrange, Act, Assert pattern (comment each section in method).
 - TypeScript:
-  - Remove braces around arrow function with single-statements.
+  - Omit the braces and `return` when an arrow function body is a single expression; keep them where the implicit return would change behaviour, such as a `useEffect` callback.
   - Add an explicit return type to every named function, except React components; inline callbacks may rely on inference. Omit it where the annotation would only restate an unspellable inferred type.
   - Use a `type` alias for React component props, never an `interface`.
   - Always use single quotes, matching the Biome config's `quoteStyle`.
