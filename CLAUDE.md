@@ -20,6 +20,7 @@
   - Add an explicit return type to every named function, except React components; inline callbacks may rely on inference. Omit it where the annotation would only restate an unspellable inferred type.
   - Use a `type` alias for React component props, never an `interface`.
   - Always use single quotes, matching the Biome config's `quoteStyle`.
+  - Import a directory's `index` module by the directory alone — `<dir>`, never `<dir>/index`.
   - Insert an empty line after a multi-line block statement (`if`, `for`, `while`, `do`/`while`, `switch`, `try`/`catch`), unless it is the last statement in its scope. Never insert one before a continuation keyword (`} else {`, `} catch {`, `} finally {`, `} while (…);`).
 - Cypress:
   - Select elements only via `cy.get('[data-cy=...]')`; add a `data-cy` attribute to every element a test targets.
