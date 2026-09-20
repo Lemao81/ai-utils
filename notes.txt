@@ -1,0 +1,3 @@
+- Install/upgrade pnpm -
+$env:PNPM_VERSION="<x.x.x>"
+irm https://get.pnpm.io/install.ps1 | iex
